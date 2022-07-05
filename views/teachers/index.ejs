@@ -1,0 +1,10 @@
+<h2>Search teachers</h2>
+<form action = "/teachers" method = "GET">
+    <label>Name</label>
+    <input type = 'text' name = 'name' value = '<%= searchOptions.name %>'>
+    <button type = 'submit'>Search</button>
+</form>
+<br>
+<% teachers.forEach(teacher => { %>
+    <div><%= teacher.name %></div>
+<% }) %>
